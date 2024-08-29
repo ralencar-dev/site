@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+        }
+        .cab {
+            font-size: 30px;
+        }
+        .ola a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            border-radius: 10px;
+            background-color: black;
+            font-size: 30px;
+            padding: 10px 20px;
+            border: 5px solid white;
+            transition: color 0.5s ease, background-color 0.3s ease, border 0.3s ease;
+        }
+        .ola a:hover {
+            background-color: white;
+            color: black;
+            border: 5px solid black;
+        }
+        .nav a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 0 20px;
+            font-size: 30px;
+            transition: color 0.5s ease, background-color 0.3s ease;
+        }
+        .nav a:hover {
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+            border-radius: 5px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 50px;
+        }
+        .meio {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            font-size: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+            flex: 3;
+            padding-left: 20px;
+            text-align: left;
+        }
+        .meio a {
+            text-decoration: none;
+            transition: color 0.5s ease, background-color 0.3s ease;
+            color: black;
+        }
+        .meio a:hover {
+            color: white;
+            background-color: black;
+            border-radius: 8px;
+        }
+        .caixas {
+            display: flex;
+            flex-direction: row;
+            gap: 30px; /* Espaçamento entre as caixas */
+            flex: 1;
+            margin-top: 100px;
+            margin-right: 200px;
+           
+        }
+        .caixa1, .caixa2 {
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 300px; /* Largura das caixas */
+            height: 300px; /* Altura das caixas */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border: 3px black solid;
+        }
+        footer{
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            color: rgb(0, 0, 0);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header class="header">
+            <div class="cab">
+                <h1>Ricardo Alencar</h1>
+            </div>
+            <nav class="nav">
+                <a href="#HOME">HOME</a>
+                <a href="#PAGE">PAGE</a>
+                <a href="#BLOG">BLOG</a>
+            </nav>
+            <div class="ola">
+                <a href="login.html"> Sign In </a>
+            </div>
+        </header>
+    </section>
+    <div class="container">
+        <div class="meio">
+            <h1>O MELHOR <br>CARA <br> <a href="LINK"> DO MUNDO</a></h1>
+        </div>
+        <div class="caixas">
+            <div class="caixa1">
+                <h1 style="text-align: center;">LOREM</h1>
+                <p style="text-align: center;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae non, voluptas soluta, unde sapiente fuga quaerat sed ipsam possimus perspiciatis molestiae, consequuntur maiores? Rerum minima accusantium perspiciatis blanditiis, inventore eius.</p>
+            </div>
+            <div class="caixa2">
+                <h1 style="text-align: center;">LOREM</h1>
+                <p style="text-align: center;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda obcaecati autem praesentium eius modi ipsum eligendi ipsam illo quos, eveniet ex itaque asperiores nobis eaque dolore neque doloremque dignissimos sint.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p> &copy; Todos Direitos Reservados</p>
+    </footer>
+</body>
+</html>
